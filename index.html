@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Matriz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h2>Formulario Matriz</h2>
+
+    <form id="matrizForm">
+        <label for="x">X:</label>
+        <input type="number" id="x" name="x" required>
+
+        <label for="y">Y:</label>
+        <input type="number" id="y" name="y" required>
+
+        <label for="tiempo">Tiempo (segundos):</label>
+        <input type="number" id="tiempo" name="tiempo" required>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" required>
+
+        <button type="button" onclick="iniciarActividad()">Iniciar Actividad</button>
+    </form>
+
+    <table id="matriz"></table>
+</body>
+</html>
